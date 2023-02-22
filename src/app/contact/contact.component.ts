@@ -3,9 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-contact',
   template: `
-    <p>
-      contact works!
-    </p>
+      <h2>contact</h2>
+      <a routerLink="add">Add contact</a>
+      <br>
+      <a routerLink="edit/1">Edit contact</a>
+
+      <div>
+          <router-outlet></router-outlet>
+      </div>
   `,
   styleUrls: ['./contact.component.css']
 })
