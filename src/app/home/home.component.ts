@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit {
   constructor() {}
     headerName = "Angular 14 tutorial";
     salary = 1000;
+    isDisabled = true;
+    colorName="red";
+    fontSize="10px"
 
   ngOnInit(): void {
     }

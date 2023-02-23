@@ -1,9 +1,11 @@
 <h3>{{headerName | lowercase}}</h3>
 
-<h3>My salary is {{salary | currency:'EUR'}}</h3>
+<h3 [style.color]="colorName" [style.font-size]="fontSize">My salary is {{salary | currency:'EUR'}}</h3>
 <br>
 
 <button (click)="Functionclick('click here')">Click Me</button>
 <br>
 
-<input #txt (change)="Functionclick(txt.value)" >
+<input [value]="isDisabled" [disabled]="isDisabled" #txt (change)="Functionclick(txt.value)" >
+<br>
+<input [(ngModel)]="headerName">
