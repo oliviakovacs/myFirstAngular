@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
     isDisabled = true;
     colorName="red";
     fontSize="10px"
+    className="headclass";
+    styleValue={"color":"blue", "font-size":"30px"}
 
   ngOnInit(): void {
     }
