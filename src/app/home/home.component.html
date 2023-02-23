@@ -1,1 +1,9 @@
-<h3>Heyho</h3>
+<h3>{{headerName | lowercase}}</h3>
+
+<h3>My salary is {{salary | currency:'EUR'}}</h3>
+<br>
+
+<button (click)="Functionclick('click here')">Click Me</button>
+<br>
+
+<input #txt (change)="Functionclick(txt.value)" >
